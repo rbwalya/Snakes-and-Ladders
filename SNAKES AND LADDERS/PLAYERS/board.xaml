@@ -1,0 +1,47 @@
+﻿<Window x:Name="board_wn" x:Class="PLAYERS.board"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLAYERS"
+        mc:Ignorable="d"
+        Title="board" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized" WindowStyle="None">
+    <Window.Effect>
+        <BlurEffect Radius="0"/>
+    </Window.Effect>
+    <Grid>
+        <Canvas x:Name="board_main" HorizontalAlignment="Center" Height="1000" Margin="450,24,462,48" VerticalAlignment="Center" Width="1000">
+            <Canvas.Background>
+                <ImageBrush ImageSource="snl.png"/>
+            </Canvas.Background>
+        </Canvas>
+        <Grid HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="400" Margin="10,24,0,0">
+            <Label x:Name="label_1" Content="player 1" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="-5.855,0.615" FontSize="36" FontFamily="Ravie"/>
+            <Button x:Name="row_1" Content="ROW DICE" BorderThickness="5" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Height="40" RenderTransformOrigin="-1.04,0.45" Click="Button_Click_2"/>
+            <Image x:Name="dice_1" HorizontalAlignment="Center" Height="100" Margin="0,340,0,10" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="lbl_pos1" Content="1" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Showcard Gothic"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left"  Height="450" Margin="10,574,0,0" VerticalAlignment="Top" Width="400" OpacityMask="#FFD3B0B0">
+            <Label x:Name="label_3" Content="player 3" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Ravie"/>
+            <Button x:Name="row_3" Content="ROW DICE" BorderThickness="5" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Height="40" RenderTransformOrigin="-1.04,0.45" Click="Button_Click_4"/>
+            <Image x:Name="dice_3" HorizontalAlignment="Center" Height="100" Margin="0,340,0,10" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="lbl_pos3" Content="1" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Showcard Gothic"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="450" Margin="1502,24,0,0" VerticalAlignment="Top" Width="400">
+            <Label x:Name="label_2" Content="player 2" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Ravie"/>
+            <Button x:Name="row_2" Content="ROW DICE" BorderThickness="5" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Height="40" RenderTransformOrigin="-1.04,0.45" Click="Button_Click_3"/>
+            <Image x:Name="dice_2" HorizontalAlignment="Center" Height="100" Margin="0,340,0,10" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="lbl_pos2" Content="1" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Showcard Gothic"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="450" Margin="1502,574,0,0" VerticalAlignment="Top" Width="400">
+            <Label x:Name="label_4" Content="player 4" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36" FontFamily="Ravie"/>
+            <Button x:Name="row_4" Content="ROW DICE" BorderThickness="5" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Width="100" Height="40" RenderTransformOrigin="-1.04,0.45" Click="Button_Click_5"/>
+            <Image x:Name="dice_4" HorizontalAlignment="Center" Height="100" Margin="0,340,0,10" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="lbl_pos4" Content="1" HorizontalAlignment="Center" Margin="0,230,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Showcard Gothic"/>
+        </Grid>
+        <Button x:Name="options" Content="⏸️" HorizontalAlignment="Center" Margin="1762,0,0,-2" VerticalAlignment="Bottom" Width="150" Height="50" FontSize="24" FontFamily="Stencil" Click="options_Click" Background="{x:Null}" BorderBrush="{x:Null}"/>
+
+    </Grid>
+    
+</Window>

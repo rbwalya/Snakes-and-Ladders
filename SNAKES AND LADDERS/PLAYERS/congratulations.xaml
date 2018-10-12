@@ -1,0 +1,20 @@
+﻿<Window x:Name="wn_con" x:Class="PLAYERS.congratulations"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLAYERS"
+        mc:Ignorable="d"
+        Title="congratulations" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen"  WindowStyle="None" WindowState="Maximized" Background="Black" AllowsTransparency="True">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="fireworks for congratulations.jpg" Stretch="None"/>
+        </Grid.Background>
+        <Label x:Name="lbl_winner" Content="CONGRATULATIONS!!!! " Foreground="Pink" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Margin="-4,0,-4,900" Height="100" Width="1920" VerticalAlignment="Bottom" FontFamily="Showcard Gothic" FontSize="72" RenderTransformOrigin="0.41,0.59"/>
+
+    </Grid>
+</Window>

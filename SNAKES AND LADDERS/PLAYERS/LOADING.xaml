@@ -1,0 +1,19 @@
+﻿<Window x:Name="loading_wn" x:Class="PLAYERS.LOADING"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PLAYERS"
+        mc:Ignorable="d"
+        Title="loading" Height="1080" Width="1920"
+        WindowStartupLocation="CenterScreen"  WindowStyle="None" WindowState="Maximized">
+    <Grid x:Name="grig">
+        <Grid.Background>
+            <ImageBrush ImageSource="logo.png" Stretch="None"/>
+        </Grid.Background>
+        <ProgressBar x:Name="progress_bar" HorizontalAlignment="Center" Height="40" Margin="0,832,0,0" VerticalAlignment="Top" Width="400
+                     " RenderTransformOrigin="0.485,-1.4" ValueChanged="progress_bar_ValueChanged"/>
+        <Label x:Name="lbldots" Content="..." HorizontalAlignment="Center" Margin="0,900,0,0" VerticalAlignment="Top" FontSize="24" Width="400" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

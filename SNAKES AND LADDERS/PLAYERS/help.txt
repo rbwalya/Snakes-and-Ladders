@@ -1,0 +1,16 @@
+DESCRIPTION.
+Snakes and Ladders is an ancient Indian board game regarded as a classic.
+
+HOW TO PLAY.
+Once you press the START button it will direct you to the main menu/ home button.
+You can choose how many players you want ranging from 1 player to 4 players, the avater, and the color of the avater.
+Once this is done, click the in button and begin to row the dice.
+The game can be paused, restarted and exited by clicking the pause symbol and the bottom right corner.
+
+HOW TO TURN OFF SOUND.
+To turn sound on and off you click then sound button.
+
+HOW TO EXIT.
+You can exit the game at any point during or after the game is over but chicking the pause button which gives the 
+option EXIT.
+
